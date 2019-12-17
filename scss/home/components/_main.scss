@@ -20,19 +20,4 @@
     font-size: $font-base-size *2;
 }
 
-.main__main button{
-    width: 200px;
-    background-color: $color-secondary;
-    border: none;
-    height: 40px;
-    border-radius: 10px;
-    transition-duration: 0.3s;
-    &:hover{
-        width: 210px;
-        height: 48px;
-        cursor: pointer;
-        opacity: 0.6;
-        color: $color-white;
-    }
-}
-
+@include btn;

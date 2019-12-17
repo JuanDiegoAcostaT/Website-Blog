@@ -10,6 +10,7 @@
 @import"components/contact";
 @import"components/footer";
 
+@include btn;
 
 .main__image{
     padding: $padding-hight;

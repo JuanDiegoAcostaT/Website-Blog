@@ -397,3 +397,17 @@ header {
 
 body {
   margin: 0px; }
+
+.btn {
+  width: 200px;
+  background-color: #E538FF;
+  border: none;
+  height: 40px;
+  border-radius: 10px;
+  transition-duration: 0.3s; }
+  .btn:hover {
+    width: 210px;
+    height: 48px;
+    cursor: pointer;
+    opacity: 0.6;
+    color: white; }

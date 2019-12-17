@@ -376,7 +376,7 @@ header {
 .main__main p {
   font-size: 32px; }
 
-.main__main button {
+.btn {
   width: 200px;
   background-color: #E538FF;
   border: none;
@@ -385,7 +385,7 @@ header {
   -webkit-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s; }
-  .main__main button:hover {
+  .btn:hover {
     width: 210px;
     height: 48px;
     cursor: pointer;
