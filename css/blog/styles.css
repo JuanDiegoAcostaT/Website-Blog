@@ -43,6 +43,7 @@ h1 {
    * 2. Show the overflow in Edge and IE.
    */
 hr {
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 1 */
   height: 0;
@@ -77,6 +78,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */ }
 
@@ -209,6 +211,7 @@ fieldset {
    *    `fieldset` elements in all browsers.
    */
 legend {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   color: inherit;
@@ -240,6 +243,7 @@ textarea {
    */
 [type="checkbox"],
 [type="radio"] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -311,11 +315,17 @@ template {
   font-size: 24px; }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
   background-color: #9A27E8; }
 
 .header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-right: 24px; }
 
@@ -328,7 +338,11 @@ header {
   cursor: pointer; }
 
 .main__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 32px; }
 
@@ -339,61 +353,128 @@ header {
   padding-right: 160px;
   padding-top: 38.4px; }
 
-.me {
-  background-color: #cccccc;
+.principal {
+  background-color: #cccccc; }
+
+.principal__titulo {
+  padding: 32px; }
+
+.principal__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  margin-top: 32px; }
-
-.me__image {
   padding: 32px; }
 
-.me__description {
-  padding: 32px; }
+.principal__main img {
+  width: 45%; }
 
-.proyectos {
+.principal__main--description {
+  padding-left: 32px; }
+
+.tablas__titulo {
+  text-align: center;
   padding-top: 64px; }
 
-.proyectos__title {
-  text-align: center; }
+.tablas {
+  padding: 64px; }
 
-.proyectos__description {
-  display: flex; }
-
-.proyecto {
-  text-align: center; }
-
-.contacto {
-  background-color: #cccccc;
+.noticia {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin-top: 64px; }
-
-.item {
-  display: flex;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: left;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 32px; }
 
-.item img {
-  width: 180px; }
+.noticia img {
+  width: 100%;
+  height: 250px; }
 
-.item__description {
-  display: flex;
-  flex-direction: column;
-  padding: 24px; }
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.container {
+  max-width: 900px;
+  margin: auto; }
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.row__gap {
+  padding: 19.5px; }
+
+.container__gap {
+  padding: 27.5px; }
+
+.col-1 {
+  width: 8.3333333333%; }
+
+.col-2 {
+  width: 16.6666666667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.3333333333%; }
+
+.col-5 {
+  width: 41.6666666667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.3333333333%; }
+
+.col-8 {
+  width: 66.6666666667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.3333333333%; }
+
+.col-11 {
+  width: 91.6666666667%; }
+
+.col-12 {
+  width: 100%; }
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6 .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  padding: 10px; }
 
 .barra {
   background-color: #E538FF;
   height: 40px; }
 
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #4d4d4d;
   text-align: center;
   height: 40px; }
-
-body {
-  margin: 0px; }

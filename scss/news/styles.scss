@@ -4,15 +4,21 @@
 @import"../normalize";
 
 
-// BODY
+
 @import"components/header";
-@import"components/main";
-@import"components/proyectos";
+@import"components/new";
 @import"components/contact";
 @import"components/footer";
 
 
-// EXCPTIONS
+.main__image{
+    padding: $padding-hight;
+}
+.main__image img {
+    width: 100%;
+
+}
+
 body{
     margin: 0px;
 }

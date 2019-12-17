@@ -37,3 +37,50 @@
            cursor: pointer;
        }
 }
+
+@mixin footer {
+    
+
+.barra{
+    background-color: $color-secondary;
+    height: 40px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-gray-dark;
+    text-align: center;
+    height: 40px;
+}
+}
+
+@mixin contact {
+    .contacto{
+        background-color: $color-gray-light;
+        display: flex;
+        margin-top: $padding-hight *2;
+    }
+    
+    .item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: $padding-hight;
+    }
+    
+    .item img {
+        width: 180px;
+    }
+    
+    .item__description{
+        display: flex;
+        flex-direction: column;
+        padding: $padding-medium *2;
+    }
+    
+    
+}
+
+

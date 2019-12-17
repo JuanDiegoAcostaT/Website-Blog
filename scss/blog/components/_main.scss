@@ -1,0 +1,21 @@
+.principal{
+background-color: $color-gray-light;
+}
+
+.principal__titulo {
+    padding: $padding-hight;
+}
+
+.principal__main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $padding-hight;
+}
+.principal__main img{
+    width: 45%;
+}
+
+.principal__main--description{
+    padding-left: $padding-hight;
+}
