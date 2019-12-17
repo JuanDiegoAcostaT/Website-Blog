@@ -1,0 +1,38 @@
+.main{
+    height: 562px;
+    max-width: 100%;
+ 
+}
+
+@include main__header;
+
+
+
+.main__main{
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__main p {
+    font-size: $font-base-size *2;
+}
+
+.main__main button{
+    width: 200px;
+    background-color: $color-secondary;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    &:hover{
+        width: 210px;
+        height: 48px;
+        cursor: pointer;
+        opacity: 0.6;
+        color: $color-white;
+    }
+}
+

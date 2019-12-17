@@ -1,0 +1,21 @@
+
+// VARIABLES AND MIXINS
+@import "../normalize";
+@import "../variables";
+@import "../mixins";
+
+
+//MAIN
+@import "components/header";
+@import "components/main";
+
+
+.main{
+    background-image: url('../../images/fondo.png');
+}
+
+
+
+
+
+

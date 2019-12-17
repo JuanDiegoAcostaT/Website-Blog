@@ -1,0 +1,16 @@
+.me{
+    background-color: $color-gray-light;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: $padding-hight;
+}
+
+.me__image{
+    padding: $padding-hight;
+}
+
+.me__description{
+    padding: $padding-hight;
+}
+

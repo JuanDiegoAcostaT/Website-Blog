@@ -1,0 +1,18 @@
+// VARIABLES AND MIXINS
+@import"../mixins";
+@import"../variables";
+@import"../mixins";
+
+
+// BODY
+@import"components/header";
+@import"components/main";
+@import"components/proyectos";
+@import"components/contact";
+@import"components/footer";
+
+
+// EXCPTIONS
+body{
+    margin: 0px;
+}

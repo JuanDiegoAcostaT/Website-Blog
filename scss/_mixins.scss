@@ -1,0 +1,39 @@
+@mixin main--header{
+    .main__header{
+        display: flex;
+        justify-content: space-between;
+        padding-top: $padding-hight
+    }
+    .main__header--logo{
+        padding-left: $padding ;
+    }
+    
+    .main__header--callaction{
+        padding-right: $padding-hight *5;
+        padding-top: $padding-hight * 1.2;
+    }
+    
+   
+}
+
+@mixin header{
+    header {
+        display: flex;
+        justify-content: flex-end;
+        background-color: $color-primary;
+    }
+    .header ul{
+        display: flex;
+        padding-right: $padding;
+       }
+       
+       .header li{
+           list-style: none;
+           padding-left: $padding-hight * 2;
+       }
+       
+       .header i{
+           font-size: 30px;
+           cursor: pointer;
+       }
+}

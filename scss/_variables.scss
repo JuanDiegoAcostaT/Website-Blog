@@ -1,0 +1,49 @@
+// COLORS
+
+$color-primary: #9A27E8;
+$color-secondary: #E538FF;
+$color-tertiary: #6F2BFF;
+$color-white: white;
+$color-black: black;
+
+//TEXTURES
+$color-alert: rgb(122, 33, 33);
+$color-error: rgb(167, 95, 95);
+$color-info:rgb(104, 104, 255);
+$color-succes: rgb(62, 230, 62);
+
+
+//GRAYS
+$color-gray: #737373;
+$color-gray-dark: darken($color-gray, 15%) ;
+$color-gray-light: lighten($color-gray, 35%) ;
+$color-gray-desaturate: desaturate($color-gray, 25%) ;
+$color-gray-saturate: saturate($color-gray, 25%) ;
+$color-gray-desaturate: desaturate($color-gray, 25%) ;
+$color-gray-upsidedown: spin($color-gray, 90) ;
+
+
+// FONTS
+$font-base: 'Roboto mono' , monospace;
+$font-base-size: 16px;
+$font-second-size: 10px;
+$font-base-heading: $font-base;
+$font-base-heading-weigth: bold;
+$font-alt: 'Gupter', serif;
+$font-code: 'Roboto', sans-serif;
+$lineheight: 1.5;
+$text-color: black;
+$text-color-secondary: white;
+
+// CONSTANTS
+$padding: 24px;
+$padding-medium: 12px;
+$padding-small: 10px;
+$padding-hight: 32px;
+
+
+// BODY AND HTML
+
+body{
+    font-family: $font-base;
+}
