@@ -357,7 +357,7 @@ header {
 .main__header--callaction {
   padding-right: 160px;
   padding-top: 38.4px; }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 415px) {
     .main__header--callaction {
       padding-right: 0px; } }
 
