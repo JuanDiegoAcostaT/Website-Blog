@@ -350,6 +350,9 @@ header {
 .main {
   height: 562px;
   max-width: 100%; }
+  @media screen and (max-width: 425px) {
+    .main {
+      height: 800px; } }
 
 .main__header {
   display: -webkit-box;
@@ -377,6 +380,9 @@ header {
 
 .main__header--logo {
   padding-left: 24px; }
+  @media screen and (max-width: 425px) {
+    .main__header--logo {
+      padding-left: 0px; } }
 
 .main__header--callaction {
   padding-right: 160px;
@@ -385,7 +391,7 @@ header {
     .main__header--callaction {
       padding-top: 10px;
       padding-right: 24px;
-      padding-left: 40px; } }
+      padding-left: 24px; } }
 
 .main__main {
   color: white;

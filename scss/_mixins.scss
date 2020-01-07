@@ -39,8 +39,12 @@
     }
     .main__header--logo{
         padding-left: $padding ;
+        @media screen and (max-width: $break-small){
+            &{
+                padding-left: 0px ;
+            }
     }
-    
+}
     .main__header--callaction{
         padding-right: $padding-hight *5;
         padding-top: $padding-hight * 1.2;
@@ -48,7 +52,7 @@
             &{
                 padding-top: $padding-small ;
                 padding-right: $padding;
-                padding-left: $padding-small * 4;
+                padding-left: $padding;
             }
     }
         

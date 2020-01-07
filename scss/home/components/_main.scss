@@ -1,8 +1,14 @@
 .main{
     height: 562px;
     max-width: 100%;
- 
+    @media screen and (max-width: $break-small){
+        & {
+           height: 800px;
+            }
+        }
 }
+ 
+
 
 @include main__header;
 
