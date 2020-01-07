@@ -32,6 +32,12 @@
     .main__header--callaction{
         padding-right: $padding-hight *5;
         padding-top: $padding-hight * 1.2;
+        
+    @media screen and (max-width: $break-small){
+        &{
+            padding-right: 0px;
+        }
+}
     }
     
    
@@ -42,6 +48,7 @@
         display: flex;
         justify-content: flex-end;
         background-color: $color-primary;
+        max-width: auto;
     }
     .header ul{
         display: flex;
@@ -57,6 +64,7 @@
            font-size: 30px;
            cursor: pointer;
        }
+
 }
 
 @mixin footer {

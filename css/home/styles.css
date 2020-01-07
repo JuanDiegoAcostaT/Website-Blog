@@ -321,7 +321,8 @@ header {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  background-color: #9A27E8; }
+  background-color: #9A27E8;
+  max-width: auto; }
 
 .header ul {
   display: -webkit-box;
@@ -356,6 +357,9 @@ header {
 .main__header--callaction {
   padding-right: 160px;
   padding-top: 38.4px; }
+  @media screen and (max-width: 375px) {
+    .main__header--callaction {
+      padding-right: 0px; } }
 
 .main__main {
   color: white;
