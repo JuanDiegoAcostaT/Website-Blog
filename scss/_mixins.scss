@@ -13,6 +13,9 @@
             opacity: 0.6;
             color: $color-white;
         }
+
+            
+        
     }
     
     
@@ -23,7 +26,16 @@
     .main__header{
         display: flex;
         justify-content: space-between;
-        padding-top: $padding-hight
+        padding-top: $padding-hight;
+        @media screen and (max-width: $break-small){
+            &{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+            }
+        }
     }
     .main__header--logo{
         padding-left: $padding ;
@@ -32,15 +44,15 @@
     .main__header--callaction{
         padding-right: $padding-hight *5;
         padding-top: $padding-hight * 1.2;
-        
-    @media screen and (max-width: $break-small){
-        &{
-            padding-right: 0px;
-        }
-}
+        @media screen and (max-width: $break-small){
+            &{
+                padding-top: $padding-small ;
+                padding-right: $padding;
+                padding-left: $padding-small * 4;
+            }
     }
-    
-   
+        
+    }   
 }
 
 @mixin header{
@@ -53,36 +65,51 @@
     .header ul{
         display: flex;
         padding-right: $padding;
+        @media screen and (max-width: $break-small){
+            & {
+                padding-right: $padding-hight * 2;
+                }
+            }
        }
        
        .header li{
            list-style: none;
            padding-left: $padding-hight * 2;
+           @media screen and (max-width: $break-small){
+            & {
+                padding-left: $padding-hight * 1.5;
+                }
+            }
        }
        
        .header i{
            font-size: 30px;
            cursor: pointer;
+           @media screen and (max-width: $break-small){
+            & {
+                font-size: 20px;
+                }
+            }
        }
 
-}
+    }
 
 @mixin footer {
     
 
-.barra{
+    .barra{
     background-color: $color-secondary;
     height: 40px;
-}
+    }
 
-.footer{
+    .footer{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: $color-gray-dark;
     text-align: center;
     height: 40px;
-}
+    }
 }
 
 @mixin contact {
@@ -108,8 +135,6 @@
         flex-direction: column;
         padding: $padding-medium *2;
     }
-    
-    
 }
-
+    
 
