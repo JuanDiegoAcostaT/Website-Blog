@@ -322,7 +322,7 @@ header {
   -ms-flex-pack: end;
   justify-content: flex-end;
   background-color: #9A27E8;
-  max-width: auto; }
+  max-width: 100%; }
 
 .header ul {
   display: -webkit-box;
@@ -341,6 +341,9 @@ header {
 .main {
   height: 562px;
   max-width: 100%; }
+  @media screen and (max-width: 425px) {
+    .main {
+      height: 100%; } }
 
 .main__header {
   display: -webkit-box;

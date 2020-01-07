@@ -1,6 +1,11 @@
 .main{
     height: 562px;
     max-width: 100%;
+    @media screen and (max-width: $break-small){
+        &{
+            height:100%;
+        }
+}
  
 }
 

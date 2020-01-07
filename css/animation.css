@@ -51,3 +51,57 @@
             transform: translate3d(0,0,0);
     
 }
+
+.fadeInRight {
+
+
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-name: fadeInRight;
+    -webkit-animation-name: fadeInRight;
+
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translatex(-3000px);
+    }
+    60%{
+        transform: translatex(25px);
+    }
+    70%{
+        transform: translatex(-10px);
+    }
+    90%{
+        transform: translatex(5px);
+    }
+}
+
+.fadeInLeft {
+
+
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    animation-name: fadeInLeft;
+    -webkit-animation-name: fadeInLeft;
+
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translatex(3000px);
+    }
+    60%{
+        transform: translatex(-25px);
+    }
+    70%{
+        transform: translatex(10px);
+    }
+    90%{
+        transform: translatex(-5px);
+    }
+}
