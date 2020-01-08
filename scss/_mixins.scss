@@ -113,6 +113,7 @@
     background-color: $color-gray-dark;
     text-align: center;
     height: 40px;
+    
     }
 }
 
@@ -121,6 +122,12 @@
         background-color: $color-gray-light;
         display: flex;
         margin-top: $padding-hight *2;
+        @media screen and (max-width: $break-small){
+            &{
+                display: flex;
+                flex-direction: column;
+            }
+    }
     }
     
     .item{
@@ -128,6 +135,13 @@
         justify-content: center;
         align-items: center;
         padding: $padding-hight;
+        @media screen and (max-width: $break-small){
+            &{
+                display: flex;
+                flex-direction: column;
+            }
+    }
+
     }
     
     .item img {

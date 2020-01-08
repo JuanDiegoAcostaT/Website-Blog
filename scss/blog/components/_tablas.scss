@@ -5,6 +5,12 @@
 
 .tablas{
     padding: $padding-hight *2;
+    @media screen and (max-width: $break-small){
+    & {
+        padding: 0px;
+        text-align: center;
+        }
+    }
 }
 
 .noticia{
@@ -13,27 +19,47 @@
     text-align: left;
     align-items: center;
     padding: $padding-hight;
+    @media screen and (max-width: $break-small){
+        & {
+            max-width: 100%;
+            text-align: center;
+            font-size: $font-base-size;
+            padding-bottom: $padding-small;
+            padding: 0px;
+            }
+        }
+}
+
+.noticia p {
+    @media screen and (max-width: $break-small){
+        & {
+            text-align: center;
+            }
+        }
+
 }
 
 .noticia img {
-    width: 100%;
+    width: 90%;
     height: 250px;
 }
 
 .row{
     display: flex;
+    @media screen and (max-width: $break-small){
+        & {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            }
+        }
 }
 .container{
     max-width: 900px;
     margin: auto;
 }
 
-.row{
 
-    display: flex;
-    
-
-}
 
 .row__gap{
     padding: 19.5px;
@@ -58,6 +84,14 @@
 .col-4{
 
     width:33.3333333333%;
+    @media screen and (max-width: $break-small){
+        & {
+            width:100%;
+            
+            }
+        }
+    
+
 }
 .col-5{
 
@@ -95,6 +129,6 @@
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6 .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
 
-    padding: 10px;
+    padding-bottom: 10px;
 
 }

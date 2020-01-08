@@ -321,21 +321,31 @@ header {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  background-color: #9A27E8; }
+  background-color: #9A27E8;
+  max-width: 100%; }
 
 .header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-right: 24px; }
+  @media screen and (max-width: 425px) {
+    .header ul {
+      padding-right: 64px; } }
 
 .header li {
   list-style: none;
   padding-left: 64px; }
+  @media screen and (max-width: 425px) {
+    .header li {
+      padding-left: 48px; } }
 
 .header i {
   font-size: 30px;
   cursor: pointer; }
+  @media screen and (max-width: 425px) {
+    .header i {
+      font-size: 20px; } }
 
 .main__header {
   display: -webkit-box;
@@ -345,16 +355,48 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 32px; }
+  @media screen and (max-width: 425px) {
+    .main__header {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .main__header--logo {
   padding-left: 24px; }
+  @media screen and (max-width: 425px) {
+    .main__header--logo {
+      padding-left: 0px; } }
 
 .main__header--callaction {
   padding-right: 160px;
   padding-top: 38.4px; }
+  @media screen and (max-width: 425px) {
+    .main__header--callaction {
+      padding-top: 10px;
+      padding-right: 24px;
+      padding-left: 24px; } }
 
 .principal {
   background-color: #cccccc; }
+  @media screen and (max-width: 425px) {
+    .principal {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .principal__titulo {
   padding: 32px; }
@@ -370,9 +412,21 @@ header {
   -ms-flex-align: center;
   align-items: center;
   padding: 32px; }
+  @media screen and (max-width: 425px) {
+    .principal__main {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .principal__main img {
   width: 45%; }
+  @media screen and (max-width: 425px) {
+    .principal__main img {
+      width: 80%; } }
 
 .principal__main--description {
   padding-left: 32px; }
@@ -383,6 +437,10 @@ header {
 
 .tablas {
   padding: 64px; }
+  @media screen and (max-width: 425px) {
+    .tablas {
+      padding: 0px;
+      text-align: center; } }
 
 .noticia {
   display: -webkit-box;
@@ -397,24 +455,40 @@ header {
   -ms-flex-align: center;
   align-items: center;
   padding: 32px; }
+  @media screen and (max-width: 425px) {
+    .noticia {
+      max-width: 100%;
+      text-align: center;
+      font-size: 16px;
+      padding-bottom: 10px;
+      padding: 0px; } }
+
+@media screen and (max-width: 425px) {
+  .noticia p {
+    text-align: center; } }
 
 .noticia img {
-  width: 100%;
+  width: 90%;
   height: 250px; }
 
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media screen and (max-width: 425px) {
+    .row {
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .container {
   max-width: 900px;
   margin: auto; }
-
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
 
 .row__gap {
   padding: 19.5px; }
@@ -433,6 +507,9 @@ header {
 
 .col-4 {
   width: 33.3333333333%; }
+  @media screen and (max-width: 425px) {
+    .col-4 {
+      width: 100%; } }
 
 .col-5 {
   width: 41.6666666667%; }
@@ -459,7 +536,7 @@ header {
   width: 100%; }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6 .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-  padding: 10px; }
+  padding-bottom: 10px; }
 
 .barra {
   background-color: #E538FF;

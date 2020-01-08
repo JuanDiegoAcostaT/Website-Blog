@@ -6,4 +6,12 @@
     text-align: left;
     width: 600px;
     padding-left: 30%;
-}
+    @media screen and (max-width: $break-small){
+        & {
+            padding-left: 0%;
+            text-align: center;
+            max-width: 100%;
+            }
+        }
+   }
+

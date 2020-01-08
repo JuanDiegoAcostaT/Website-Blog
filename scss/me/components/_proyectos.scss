@@ -1,5 +1,11 @@
 .proyectos{
     padding-top: $padding-hight *2;
+    @media screen and (max-width: $break-small){
+        &{
+            display: flex;
+            flex-direction: column;
+        }
+}
 }
 
 .proyectos__title{
@@ -8,7 +14,14 @@
 
 .proyectos__description{
     display: flex;
+    @media screen and (max-width: $break-small){
+        &{
+            display: flex;
+            flex-direction: column;
+        }
+}
 }
 .proyecto{
     text-align: center;
+
 }

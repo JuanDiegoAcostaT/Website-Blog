@@ -313,31 +313,55 @@ template {
 header {
   display: flex;
   justify-content: flex-end;
-  background-color: #9A27E8; }
+  background-color: #9A27E8;
+  max-width: 100%; }
 
 .header ul {
   display: flex;
   padding-right: 24px; }
+  @media screen and (max-width: 425px) {
+    .header ul {
+      padding-right: 64px; } }
 
 .header li {
   list-style: none;
   padding-left: 64px; }
+  @media screen and (max-width: 425px) {
+    .header li {
+      padding-left: 48px; } }
 
 .header i {
   font-size: 30px;
   cursor: pointer; }
+  @media screen and (max-width: 425px) {
+    .header i {
+      font-size: 20px; } }
 
 .main__header {
   display: flex;
   justify-content: space-between;
   padding-top: 32px; }
+  @media screen and (max-width: 425px) {
+    .main__header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
 
 .main__header--logo {
   padding-left: 24px; }
+  @media screen and (max-width: 425px) {
+    .main__header--logo {
+      padding-left: 0px; } }
 
 .main__header--callaction {
   padding-right: 160px;
   padding-top: 38.4px; }
+  @media screen and (max-width: 425px) {
+    .main__header--callaction {
+      padding-top: 10px;
+      padding-right: 24px;
+      padding-left: 24px; } }
 
 .me {
   background-color: #cccccc;
@@ -345,6 +369,10 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-top: 32px; }
+  @media screen and (max-width: 425px) {
+    .me {
+      display: flex;
+      flex-direction: column; } }
 
 .me__image {
   padding: 32px; }
@@ -354,12 +382,20 @@ header {
 
 .proyectos {
   padding-top: 64px; }
+  @media screen and (max-width: 425px) {
+    .proyectos {
+      display: flex;
+      flex-direction: column; } }
 
 .proyectos__title {
   text-align: center; }
 
 .proyectos__description {
   display: flex; }
+  @media screen and (max-width: 425px) {
+    .proyectos__description {
+      display: flex;
+      flex-direction: column; } }
 
 .proyecto {
   text-align: center; }
@@ -368,12 +404,20 @@ header {
   background-color: #cccccc;
   display: flex;
   margin-top: 64px; }
+  @media screen and (max-width: 425px) {
+    .contacto {
+      display: flex;
+      flex-direction: column; } }
 
 .item {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 32px; }
+  @media screen and (max-width: 425px) {
+    .item {
+      display: flex;
+      flex-direction: column; } }
 
 .item img {
   width: 180px; }
