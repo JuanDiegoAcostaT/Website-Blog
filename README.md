@@ -3,14 +3,14 @@ Sass Example Blog
 
 <img src="https://i.imgur.com/PrQ9A00.png" />
 
--Html
+- Html
 
--Preprocesadores
+- Preprocesadores
 
--Css
+- Css
 
--Scss
+- Scss
 
--Sass
+- Sass
 
 <img src="https://i.imgur.com/8f1ZbEE.png" />
